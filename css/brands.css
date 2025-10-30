@@ -76,6 +76,13 @@
 	--button-border:1px solid #ffffff;
 }
 
+/* About Us */
+.button-about-us {
+	--button-text:#000000;
+	--button-background:#ffffff;
+	--button-border:1px solid #212121;
+}
+
 /* Amazon */
 .button-amazon {
 	--button-text:#000000;
@@ -356,6 +363,13 @@
 	--button-text:#ffffff;
 	--button-background:#2c3440;
 	--button-border:1px solid #FFFFFF;
+}
+
+/* Life Groups */
+.button-life-groups {
+	--button-text:#ffffff;
+	--button-background:#048261;
+	--button-border:1px solid #ffffff;
 }
 
 /* Line */
