@@ -19,7 +19,7 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Run lychee link checker against index.html
-        uses: lycheeverse/lychee-action@v1
+        uses: lycheeverse/lychee-action@v2.0.2
         with:
           # lychee will scan links in the specified files
           args: index.html
