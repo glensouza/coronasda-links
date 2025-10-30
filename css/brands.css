@@ -12,14 +12,24 @@
   color:var(--button-text,#000000);
   background-color:var(--button-background,transparent);
 	border:var(--button-border,none);
-	transition:filter 0.2s ease,transform 0.2s ease;
+	transition:filter 200ms ease, transform 200ms ease, box-shadow 200ms ease;
+	will-change: filter, transform, box-shadow;
 }
 
 /* Global Button Hover Effect
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-.button:hover,button:hover {
-	filter:brightness(90%);
-	transform:translateY(-1px);
+.button:hover, .button:focus-visible, button:hover, button:focus-visible {
+	/* Slightly brighter and lift on hover/focus for better affordance */
+	filter: brightness(1.08);
+	transform: translateY(-3px) scale(1.02);
+	/* Subtle shadow to give depth; uses a neutral shadow so it works on most brand colors */
+	box-shadow: 0 8px 20px rgba(11,35,70,0.12);
+}
+
+/* Focus-visible for keyboard users: clear focus ring that works on all backgrounds */
+.button:focus-visible, button:focus-visible {
+	outline: none;
+	box-shadow: 0 0 0 3px rgba(72,153,247,0.18), 0 8px 20px rgba(11,35,70,0.12);
 }
 
 /* Button Icons
