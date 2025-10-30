@@ -14,6 +14,9 @@
 	border:var(--button-border,none);
 	transition:filter 200ms ease, transform 200ms ease, box-shadow 200ms ease;
 	will-change: filter, transform, box-shadow;
+	/* prepare for animated overlay/gloss */
+	position:relative;
+	overflow:hidden;
 }
 
 /* Global Button Hover Effect
@@ -30,6 +33,31 @@
 .button:focus-visible, button:focus-visible {
 	outline: none;
 	box-shadow: 0 0 0 3px rgba(72,153,247,0.18), 0 8px 20px rgba(11,35,70,0.12);
+}
+
+/* Subtle gloss/halo overlay that brightens buttons on hover (works with most brand colors) */
+.button::after {
+	content: "";
+	position: absolute;
+	left: -30%;
+	top: -50%;
+	width: 160%;
+	height: 200%;
+	pointer-events: none;
+	mix-blend-mode: overlay;
+	background: radial-gradient(40% 30% at 10% 20%, rgba(255,255,255,0.14), rgba(255,255,255,0.06) 20%, transparent 40%);
+	opacity: 0;
+	transform: translateY(8%) scale(0.98);
+	transition: opacity 220ms ease, transform 300ms cubic-bezier(.2,.9,.3,1);
+}
+
+.button:hover::after, .button:focus-visible::after {
+	opacity: 1;
+	transform: translateY(0) scale(1);
+}
+
+.button:active {
+	transform: translateY(-1px) scale(0.995);
 }
 
 /* Button Icons

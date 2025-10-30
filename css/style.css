@@ -63,15 +63,19 @@
 /* Base Styles
   –––––––––––––––––––––––––––––––––––––––––––––––––– */
   body {
-	margin:0;
-	padding:0;
-	background-color:#ffffff;
-	color:#1a1a1a;
-	font-family:"Open Sans",system-ui;
-	font-size:1.125rem;     				/* 18px */
+ 	margin:0;
+ 	padding:0;
+ 	/* Page background: gentle deep gradient inspired by monol.ink */
+ 	--page-bg-start: #07102a; /* deep navy */
+ 	--page-bg-mid: #0b1f3a;   /* slate blue */
+ 	--page-bg-end: #102a4a;   /* richer blue */
+ 	background: linear-gradient(135deg, var(--page-bg-start) 0%, var(--page-bg-mid) 50%, var(--page-bg-end) 100%);
+ 	color:#e8eefc; /* light text for contrast on the dark background */
+ 	font-family:"Open Sans",system-ui;
+ 	font-size:1.125rem;     			/* 18px */
     font-weight:400;
-	line-height:1.6;
-}
+ 	line-height:1.6;
+ }
 
 /* Typography
   –––––––––––––––––––––––––––––––––––––––––––––––––– */

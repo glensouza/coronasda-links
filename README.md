@@ -2,11 +2,15 @@
 
 A simple, mobile-friendly links hub for Corona Seventh-day Adventist Church, based on [LittleLink](https://github.com/sethcottle/littlelink).
 
-[![Validate index.html](https://github.com/glensouza/coronasda-links/actions/workflows/validate-index.yml/badge.svg)](https://github.com/glensouza/coronasda-links/actions/workflows/validate-index.yml)
+## 🙏 About Corona SDA Church
+
+Corona Seventh-day Adventist Church serves the Corona, California community. Visit [coronasdachurch.com](https://coronasdachurch.com/) to learn more.
 
 ## 🔗 Live Site
 
 Visit: [https://links.coronasda.church](https://links.coronasda.church)
+
+[![Validate index.html](https://github.com/glensouza/coronasda-links/actions/workflows/validate-index.yml/badge.svg)](https://github.com/glensouza/coronasda-links/actions/workflows/validate-index.yml)
 
 [![pages-build-deployment](https://github.com/glensouza/coronasda-links/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/glensouza/coronasda-links/actions/workflows/pages/pages-build-deployment)
 
@@ -29,13 +33,8 @@ To update the links or content:
 
 1. Edit `index.html`
 1. Update button links and text as needed
-1. Commit and push changes - GitHub Pages will automatically update
 
-## 🚀 Deployment
-
-This site is configured for GitHub Pages.
-
-## � Local preview
+## 🖥️ Local preview
 
 Quick ways to preview the site locally:
 
@@ -58,10 +57,10 @@ npx serve -l 8000
 
 Open `http://localhost:8000` in your browser after starting the server.
 
-## �📝 License
+## 🚀 Deployment
+
+Commit and push changes - GitHub Pages will automatically update as this site is configured for GitHub Pages.
+
+## 📝 License
 
 MIT license based on [LittleLink](https://github.com/sethcottle/littlelink) by Seth Cottle.
-
-## 🙏 About Corona SDA Church
-
-Corona Seventh-day Adventist Church serves the Corona, California community. Visit [coronasdachurch.com](https://coronasdachurch.com/) to learn more.
