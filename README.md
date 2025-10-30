@@ -4,14 +4,12 @@ A simple, mobile-friendly links hub for Corona Seventh-day Adventist Church, bas
 
 ## 🔗 Live Site
 
-Visit: [https://glensouza.github.io/coronasda-links/](https://glensouza.github.io/coronasda-links/)
+Visit: [https://links.coronasda.church](https://links.coronasda.church)
 
 ## 📱 Features
 
 - Clean, responsive design that works on all devices
 - Quick access to all church resources and social media
-- Easy to maintain and update
-- GitHub Pages hosting (free!)
 - Light/Dark theme support
 
 ## 🏗️ Structure
@@ -35,7 +33,7 @@ This site is configured for GitHub Pages.
 
 ## 📝 License
 
-Based on [LittleLink](https://github.com/sethcottle/littlelink) by Seth Cottle.
+MIT license based on [LittleLink](https://github.com/sethcottle/littlelink) by Seth Cottle.
 
 ## 🙏 About Corona SDA Church
 
