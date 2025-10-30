@@ -26,19 +26,12 @@ Visit: [https://glensouza.github.io/coronasda-links/](https://glensouza.github.i
 To update the links or content:
 
 1. Edit `index.html`
-2. Update button links and text as needed
-3. Replace `images/avatar.png` and `images/avatar@2x.png` with your church logo
-4. Commit and push changes - GitHub Pages will automatically update
+1. Update button links and text as needed
+1. Commit and push changes - GitHub Pages will automatically update
 
 ## 🚀 Deployment
 
-This site is configured for GitHub Pages:
-
-1. Go to repository Settings → Pages
-2. Set Source to "Deploy from a branch"
-3. Select branch `main` or `copilot/create-church-linktree-alternative`
-4. Select folder `/ (root)`
-5. Save and wait a few minutes for deployment
+This site is configured for GitHub Pages.
 
 ## 📝 License
 
