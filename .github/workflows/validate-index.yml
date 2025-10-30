@@ -1,0 +1,29 @@
+name: Validate index.html
+
+on:
+  pull_request:
+    paths:
+      - index.html
+  push:
+    branches:
+      - main
+    paths:
+      - index.html
+
+jobs:
+  validate:
+    name: Link check index.html
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Run lychee link checker against index.html
+        uses: lycheeverse/lychee-action@v1
+        with:
+          # lychee will scan links in the specified files
+          args: index.html
+
+      - name: Summary
+        if: ${{ always() }}
+        run: echo "lychee link check finished"
