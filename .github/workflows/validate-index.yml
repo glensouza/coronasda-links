@@ -10,6 +10,8 @@ on:
     paths:
       - index.html
       - .github/workflows/validate-index.yml
+      - .lychee.toml
+      - .lychee.yml
 
 jobs:
   validate:
