@@ -2,7 +2,9 @@
 # Use TOML so the lychee action's parser won't fail.
 
 # Output format used by lychee (keeps logs readable in GitHub Actions)
-format = "github"
+# Valid options: Compact, Detailed, Json, Markdown, Raw
+# Use Markdown for GitHub-friendly output.
+format = "Markdown"
 
 # Maximum seconds to wait for network requests
 timeout = 20
