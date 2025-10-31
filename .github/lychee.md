@@ -6,17 +6,19 @@ This repository uses lychee (via `lycheeverse/lychee-action`) to validate links 
 Where the config lives
 ----------------------
 
-The CI reads settings from `.lychee.yml` at the repository root. If a link reliably fails the check
-(for example a marketing/landing page that returns 403 to automated clients), add it to the `exclude`
-list in `.lychee.yml` instead of removing the link from the site.
+The CI reads settings from `.lychee.toml` at the repository root. This repository now uses a TOML
+configuration file for lychee. If a link reliably fails the check (for example a marketing/landing
+page that returns 403 to automated clients), add it to the `exclude` list in `.lychee.toml` instead
+of removing the link from the site.
 
 How to add an excluded URL
 --------------------------
 
-1. Edit `.lychee.yml` and add the problematic URL under the `exclude:` key. Example:
+1. Edit `.lychee.toml` and add the problematic URL to the `exclude` array. Example (TOML):
 
-   exclude:
-     - "https://lp.constantcontactpages.com/sl/Cqimxm7/csdac"
+  ```toml
+  exclude = ["https://lp.constantcontactpages.com/sl/Cqimxm7/csdac"]
+  ```
 
 2. Commit and push the change. The `Validate index.html` workflow will pick up the new config on the next
    push or PR and will no longer fail because of the excluded URL.
@@ -36,7 +38,7 @@ To test lychee locally you can run the same config with the lychee Docker image 
 PowerShell command (run from repo root):
 
 ```powershell
-docker run --rm -v ${PWD}:/workdir lycheeverse/lychee index.html --config .lychee.yml
+docker run --rm -v ${PWD}:/workdir lycheeverse/lychee index.html --config .lychee.toml
 ```
 
 Alternatively, trigger the GitHub Action by opening a PR or pushing a branch — the `Validate index.html` job will
