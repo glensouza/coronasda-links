@@ -1,0 +1,19 @@
+## Lychee configuration for link checking
+# Strategy:
+# - Keep checks and excludes in a single YAML file so CI and maintainers can
+#   update ignored links without editing the workflow.
+# - Only exclude known problematic external URLs (403s, geo-blocked pages).
+# - Use a short timeout and the GitHub-friendly output format.
+
+# Output format used by lychee (keeps logs readable in GitHub Actions)
+format: github
+
+# Maximum seconds to wait for network requests
+timeout: 20
+
+# Explicit list of URLs to ignore (these remain in the page but won't fail CI)
+exclude:
+  - "https://lp.constantcontactpages.com/sl/Cqimxm7/csdac"
+
+# Note: add additional URLs here if you find reliable false-positives
+# (for example, marketing or third-party landing pages that block automated checks).

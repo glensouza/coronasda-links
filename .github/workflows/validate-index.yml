@@ -22,7 +22,8 @@ jobs:
         uses: lycheeverse/lychee-action@v2.0.2
         with:
           # lychee will scan links in the specified files
-          args: index.html
+            # use centralized lychee config (.lychee.yml) which includes excludes
+            args: index.html --config .lychee.yml
 
       - name: Summary
         if: ${{ always() }}

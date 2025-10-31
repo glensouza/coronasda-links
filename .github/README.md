@@ -1,3 +1,4 @@
+````markdown
 # Corona SDA Church - Links Hub
 
 A simple, mobile-friendly links hub for Corona Seventh-day Adventist Church, based on [LittleLink](https://github.com/sethcottle/littlelink).
@@ -57,6 +58,10 @@ npx serve -l 8000
 
 Open `http://localhost:8000` in your browser after starting the server.
 
+## ✅ Link checks (CI)
+
+This repository uses the lychee link checker in CI to validate links in `index.html`. See `.github/lychee.md` for details on the configuration, how to add excludes, and how to run lychee locally.
+
 ## 🚀 Deployment
 
 Commit and push changes - GitHub Pages will automatically update as this site is configured for GitHub Pages.
@@ -64,3 +69,5 @@ Commit and push changes - GitHub Pages will automatically update as this site is
 ## 📝 License
 
 MIT license based on [LittleLink](https://github.com/sethcottle/littlelink) by Seth Cottle.
+
+````
