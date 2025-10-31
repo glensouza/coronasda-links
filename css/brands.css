@@ -78,8 +78,8 @@
 
 /* About Us */
 .button-about-us {
-	--button-text:#fff;
-	--button-background:#f4a565;
+	--button-text:#000;
+	--button-background:#e5d3b6;
 	--button-border:1px solid #fff;
 }
 
@@ -282,7 +282,7 @@
 /* Giving */
 .button-giving {
 	--button-text:#000000;
-	--button-background:#8bff91;
+	--button-background:#a9b391;
   --button-border:1px solid #fff;
 }
 
@@ -662,7 +662,7 @@
 /* Web */
 .button-web {
 	--button-text:#fff;
-	--button-background:#e11818;
+	--button-background:#b53424;
 	--button-border:1px solid #fff;
 }
 
