@@ -9,6 +9,7 @@ on:
       - main
     paths:
       - index.html
+      - .github/workflows/validate-index.yml
 
 jobs:
   validate:
