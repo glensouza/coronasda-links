@@ -1,4 +1,3 @@
-````markdown
 # Corona SDA Church - Links Hub
 
 A simple, mobile-friendly links hub for Corona Seventh-day Adventist Church, based on [LittleLink](https://github.com/sethcottle/littlelink).
@@ -69,5 +68,3 @@ Commit and push changes - GitHub Pages will automatically update as this site is
 ## 📝 License
 
 MIT license based on [LittleLink](https://github.com/sethcottle/littlelink) by Seth Cottle.
-
-````
