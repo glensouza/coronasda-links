@@ -159,6 +159,22 @@ footer {
     font-size:var(--scale-0);
 }
 
+/* Small repository / contribute link shown in the footer */
+.repo-link {
+	margin-top: 0.5rem;
+	font-size: 0.8125rem; /* ~13px */
+	opacity: 0.92;
+}
+.repo-link a {
+	color: #cfe1ff; /* subtle light link */
+	text-decoration: none;
+	border-bottom: 1px solid rgba(255,255,255,0.04);
+	padding-bottom: 1px;
+}
+.repo-link a:hover {
+	color: #ffffff;
+}
+
 /* Responsive adjustments */
 @media (max-width:34.375rem) {              /* 550px */
   h1 {
