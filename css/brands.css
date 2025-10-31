@@ -71,16 +71,16 @@
 
 /* Default */
 .button.button-default {
-	--button-text:#ffffff;
+	--button-text:#fff;
 	--button-background:#2457F5;
 	--button-border:1px solid #ffffff;
 }
 
 /* About Us */
 .button-about-us {
-	--button-text:#000000;
-	--button-background:#ffffff;
-	--button-border:1px solid #212121;
+	--button-text:#fff;
+	--button-background:#f4a565;
+	--button-border:1px solid #fff;
 }
 
 /* Amazon */
@@ -227,6 +227,13 @@
 	--button-background:#F45800;
 }
 
+/* Events */
+.button-events {
+	--button-text:#ffffff;
+	--button-background:#c065f4;
+	--button-border:1px solid #ffffff;
+}
+
 /* Facebook */
 .button-faceb {
 	--button-text:#ffffff;
@@ -270,6 +277,13 @@
 .button-gitlab {
 	--button-text:#ffffff;
 	--button-background:#6151b2;
+}
+
+/* Giving */
+.button-giving {
+	--button-text:#000000;
+	--button-background:#8bff91;
+  --button-border:1px solid #fff;
 }
 
 /* GoFundMe */
@@ -643,6 +657,13 @@
 	--button-text:#FFFFFF;
 	--button-background:#000000;
 	--button-border:1px solid #FFFFFF;
+}
+
+/* Web */
+.button-web {
+	--button-text:#fff;
+	--button-background:#e11818;
+	--button-border:1px solid #fff;
 }
 
 /* WhatsApp */
