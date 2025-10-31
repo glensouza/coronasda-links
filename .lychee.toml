@@ -10,7 +10,11 @@ format = "Markdown"
 timeout = 20
 
 # Explicit list of URLs to ignore (these remain in the page but won't fail CI)
-exclude = ["https://lp.constantcontactpages.com/sl/Cqimxm7/csdac"]
+# Add exact paths here; if you later want to exclude whole hosts, add their root URL
+exclude = [
+	"https://lp.constantcontactpages.com/sl/Cqimxm7/csdac",
+	"https://www.instagram.com/corona_sda_church"
+]
 
 # Note: add additional URLs here if you find reliable false-positives
 # (for example, marketing or third-party landing pages that block automated checks).
