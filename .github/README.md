@@ -59,7 +59,7 @@ Open `http://localhost:8000` in your browser after starting the server.
 
 ## ✅ Link checks (CI)
 
-This repository uses the lychee link checker in CI to validate links in `index.html`. See [lychee.md](.github/lychee.md) for details on the configuration, how to add excludes, and how to run lychee locally.
+This repository uses the lychee link checker in CI to validate links in `index.html`. See [lychee.md](./lychee.md) for details on the configuration, how to add excludes, and how to run lychee locally.
 
 ## 🚀 Deployment
 
