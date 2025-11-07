@@ -1,4 +1,6 @@
 name: Validate index.html
+permissions:
+  contents: read
 
 on:
   pull_request:
